@@ -5,39 +5,127 @@
 }
 
 body{
-   height: 100vh;
-   background: linear-gradient(
+    height: 100vh;
+    background: linear-gradient(
     90deg,
-     rgba(65,184,131,1) 0%,
-     rgba(0,212,255,1) 100%
-   );
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.container {
-    border: 2px solid #aFff;
-    padding: 30px 40px;
-    width: 45%;
-}
-
-.new-container {
-    background-color: #aFff;
-    padding: 30px 20px;
-    border-radius: 5px ;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+        rgba(65,184,131,1) 0%,
+        rgba(0,212,255,1) 100%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.tasks-container {
-    flex: 3;
-    font-size: 1rem;
-    border: 2px solid #d1d3d4;
-    border-radius: 5px;
-    padding: 12px;
-    font-weight: 500;
-}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    }
 
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    }
+
+.secundaria button {
+    position: absolute;
+    right: 18%;
+    margin-top: -30px;
+    } 
+
+.secundaria i {
+    font-size: 22px;
+    } 
+
+.principal {
+    margin-top: 40px;
+    width: 60%;
+    }
+
+.textInsert {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 90%;
+    }
+
+.divInsert {
+    padding: 10px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 6px 5px 10px 0px rgb(138, 130, 130);
+    }
+
+button {
+    width: 10%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    }
+
+.bx-plus {
+    font-size: 30px;
+    margin-left: 10px;
+    background-color: rgb(94, 14, 223);
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    }
+
+.divLi {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(201, 201, 201);
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px 0px rgb(117, 117, 117);
+    display: flex;
+    align-items: center;
+    }
+
+.divLi span {
+    width: 80%;
+    color: rgb(90, 45, 45);
+    }
+
+.divLi input {
+    width: 10%;
+    outline: none;
+    accent-color: currentcolor;
+    }
+
+.divLi i {
+    font-size: 22px;
+    color: brown;
+    }
+
+li {
+    list-style-type: none;
+    }
+
+.line-through {
+    text-decoration: line-through;
+    }
+
+@media (max-width: 775px) {
+    input {
+        width: 70%;
+    }
+
+    .divInsert button {
+        width: 30%;
+    }
+
+    i {
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    p {
+        font-size: x-large;
+    }
+    }
